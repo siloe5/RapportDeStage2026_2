@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rapport de stage — Anecdote</title>
+  <link rel="stylesheet" href="RapportStage1_Style.css">
+</head>
+<body>
+  <audio id="bg-music" src="BackgroundOffice.mp3" loop preload="auto"></audio>
+
+  <!-- ÉTAPE 1 : Vidéo plein écran + Titre/Bouton de fin -->
+  <section class="hero" id="hero">
+    <video id="intro-video" src="Anim_Debut.mp4" autoplay playsinline></video>
+    
+    <div class="hero-overlay" id="hero-overlay">
+      <h1 id="maint-title">L'ambiance au bureau</h1>
+      <button id="btn-raconte">Raconte !</button>
+    </div>
+  </section>
+
+  <!-- ÉTAPE 2 : Les 5 cases de la BD -->
+  <main class="bd-container" id="bd-container">
+    <div class="case-bd reveal">
+      <img src="VID1.gif" alt="Case 1">
+    </div>
+
+
+    <!-- Bouton de fin de scroll -->
+    <div class="end-section">
+      <button id="btn-pause" class="btn-pause-style">
+        L'ambiance au bureau c'était comment ? 
+      </button>
+    </div>
+  </main>
+
+  <!-- Nouvel écran plein écran avec le texte seul au centre -->
+  <div id="final-screen" class="final-screen">
+    <p>
+      L'univers du bureau changeait en fonction de ses occupants: le ton y était calme en présence de nos responsables. Lorsqu'elles n'étaient pas là, on se permettait de mettre de la musique et de parler entre nos tables.
+    </p>
+    <button id="btn-back" class="btn-back-style">← Revenir sur la BD</button>
+  </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
